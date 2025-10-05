@@ -6,7 +6,7 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 
 const app = express();
-app.use(cors({ origin: "mongodb+srv://tracker:tracker123@cluster0.fwhcsvm.mongodb.net/" }));
+app.use(cors());
 app.use(express.json());
 
 const SECRET = "supersecretkey"; // JWT secret
