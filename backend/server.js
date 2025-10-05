@@ -41,7 +41,7 @@ const User = mongoose.model("User", userSchema);
 const Topic = mongoose.model("Topic", topicSchema);
 
 // ------------------- Connect to MongoDB -------------------
-mongoose.connect("mongodb://127.0.0.1:27017/dsa_tracker", {
+mongoose.connect("mongodb+srv://tracker:tracker123@cluster0.fwhcsvm.mongodb.net/", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
